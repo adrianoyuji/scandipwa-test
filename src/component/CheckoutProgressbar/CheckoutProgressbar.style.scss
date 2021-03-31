@@ -1,0 +1,57 @@
+.Progressbar {
+    background: var(--breadcrumbs-background);
+    min-height: var(--breadcrumbs-height);
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0px;
+    
+    .ProgressLine {
+        min-height:0.5rem;
+        width: 100%;            
+    }
+    
+    .Unfinished {
+        background-color: var(--placeholder-gradient-color);     
+    }
+    
+    .CursorPointer {
+        cursor:pointer
+    }
+
+    .UnfinishedTitle {
+        color: var(--secondary-dark-color)
+    }
+
+    .Finished {
+        background-color: var(--primary-base-color);
+    }
+  
+    .ProgressBarItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ProgressBarItemCircle {
+        border-radius: 999px;
+        min-width: 3rem;
+        min-height: 3rem;
+        display: flex;
+        color:white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    .ProgressbarItemTitle {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
+
